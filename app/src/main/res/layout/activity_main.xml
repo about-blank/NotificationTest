@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vishal.notificationtest.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#0000ff"
+                android:text="Enter the required details for creating a notification." />
+
+            <EditText
+                android:id="@+id/contentTitleField"
+                android:layout_below="@id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="content title"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/contentTextField"
+                android:layout_below="@id/contentTitleField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="content text"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/tickerField"
+                android:layout_below="@id/contentTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="ticker text"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/bigTextField"
+                android:layout_below="@id/tickerField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="big text"
+                android:visibility="gone"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Big Style"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/tickerField"
+                android:layout_alignLeft="@+id/tickerField"
+                android:layout_alignStart="@+id/tickerField" />
+
+            <Button
+                android:id="@+id/notifyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Notification"
+                android:layout_alignBaseline="@+id/checkBox"
+                android:layout_alignBottom="@+id/checkBox"
+                android:layout_alignRight="@+id/tickerField"
+                android:layout_alignEnd="@+id/tickerField" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
